@@ -1,11 +1,11 @@
 import React from 'react'
 import { Outlet } from 'react-router'
 import { SidebarComponent } from "@syncfusion/ej2-react-navigations"
-import { Navitems } from 'component'
+import { Navitems , MobileSidebar } from 'component'
 const AdminLayout = () => {
   return (
     <div className='admin-layout'>
-        MobileSidebar
+        <MobileSidebar />        
         <aside className='w-full max-w-[270px] hidden lg:block'>
         <SidebarComponent>
             <Navitems />
@@ -18,4 +18,4 @@ const AdminLayout = () => {
   )
 }
 
-export default AdminLayout
+export default AdminLayout;

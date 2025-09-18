@@ -123,7 +123,7 @@ export const storeUserData = async () => {
 }
 }
 
-export const getExistingUser = async () => {
+export const getExistingUser = async (id: string) => {
     try {
 
         const user = await account.get();

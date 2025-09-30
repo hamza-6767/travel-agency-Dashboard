@@ -7,9 +7,10 @@ import { account } from '~/appwrite/client';
 
 export async function  clientLoader() {
     try{
+        // await new Promise(resolve => setTimeout(resolve, 100));
         const user = await account.get();
 
-        if(!user.$id) return redirect("/");
+        if(user.$id) return redirect("/");
 
     }catch(e){
         console.log("Loder Error",e)
